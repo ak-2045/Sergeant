@@ -80,16 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const gameTitle = document.getElementById("game-title");
     const welcomeText = document.getElementById("welcome-text");
     const originalTitle = gameTitle.textContent; // Original title text
+    const violinSound = document.getElementById("violin-sound"); // Get the audio element
 
     gameTitle.addEventListener("mouseover", function () {
         welcomeText.style.opacity = '0'; // Fade out the welcome text
         gameTitle.textContent = "You Will Die"; // Change to the desired text on hover
+        violinSound.play(); // Play the violin sound
     });
 
     gameTitle.addEventListener("mouseout", function () {
         welcomeText.style.opacity = '1'; // Fade back in the welcome text
         gameTitle.textContent = originalTitle; // Change back to original text
+        violinSound.pause(); // Stop the violin sound
+        violinSound.currentTime = 0; // Reset the audio to the beginning
     });
 });
-
-
