@@ -1,0 +1,55 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ghost-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+/* Styling each ghost name button */
+.ghost-item {
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.ghost-item:hover {
+    background-color: #333;
+}
+
+/* Hidden ghost info container */
+.ghost-info {
+    display: none;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ghost-info img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.ghost-info h3 {
+    margin: 10px 0;
+}
+
+.ghost-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+

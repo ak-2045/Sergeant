@@ -1,0 +1,43 @@
+body
+{
+background-color: #000000;
+
+}
+
+.centered-content {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: -0.8%
+}
+
+.report-option {
+    font-family: 'Chiller', cursive;
+    font-size: 2.5em;
+    padding: 20px 50px;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: 2px solid #f7f7f7;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.report-option:hover {
+    background-color: #FF0000;
+    transform: scale(1.1); 
+}
+
+.experience
+{
+    color: #FF0000;
+    font-family: 'Chiller', cursive;
+    font-size: 2em;
+    
+}
+
+.id-card
+{
+    border-radius: 30px;
+    align-self: center;
+    margin-left: 16%;
+    margin-top: 3.5%;
+}

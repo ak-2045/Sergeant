@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Journal</title>
+    <link rel="stylesheet" href="ghost-journal-style.css">
+    <audio id="horror-music-2" src="Elements/horror-music-2.mp3" loop autoplay></audio>
+
+
+    <script>
+        const music = document.getElementById("horror-music-2");
+    
+        // Restore music playback time from localStorage
+        window.onload = function () {
+            const savedTime = localStorage.getItem("musicTime");
+            if (savedTime) {
+                music.currentTime = savedTime;
+            }
+            music.play();
+        };
+    </script>
+    <script src="ghost-journal-script.js"></script>
+</head>
+<body>
+    <h2>Ghost Journal</h2>
+
+    <div class="ghost-grid">
+        <!-- Create 24 ghost names in the grid -->
+        <div class="ghost-item" data-ghost="ghost1">Ghost Name 1</div>
+        <div class="ghost-item" data-ghost="ghost2">Ghost Name 2</div>
+        <div class="ghost-item" data-ghost="ghost3">Ghost Name 3</div>
+        <div class="ghost-item" data-ghost="ghost4">Ghost Name 4</div>
+        <div class="ghost-item" data-ghost="ghost5">Ghost Name 5</div>
+        <div class="ghost-item" data-ghost="ghost6">Ghost Name 6</div>
+        <div class="ghost-item" data-ghost="ghost7">Ghost Name 7</div>
+        <div class="ghost-item" data-ghost="ghost8">Ghost Name 8</div>
+        <div class="ghost-item" data-ghost="ghost9">Ghost Name 9</div>
+        <div class="ghost-item" data-ghost="ghost10">Ghost Name 10</div>
+        <div class="ghost-item" data-ghost="ghost11">Ghost Name 11</div>
+        <div class="ghost-item" data-ghost="ghost12">Ghost Name 12</div>
+        <div class="ghost-item" data-ghost="ghost13">Ghost Name 13</div>
+        <div class="ghost-item" data-ghost="ghost14">Ghost Name 14</div>
+        <div class="ghost-item" data-ghost="ghost15">Ghost Name 15</div>
+        <div class="ghost-item" data-ghost="ghost16">Ghost Name 16</div>
+        <div class="ghost-item" data-ghost="ghost17">Ghost Name 17</div>
+        <div class="ghost-item" data-ghost="ghost18">Ghost Name 18</div>
+        <div class="ghost-item" data-ghost="ghost19">Ghost Name 19</div>
+        <div class="ghost-item" data-ghost="ghost20">Ghost Name 20</div>
+        <div class="ghost-item" data-ghost="ghost21">Ghost Name 21</div>
+        <div class="ghost-item" data-ghost="ghost22">Ghost Name 22</div>
+        <div class="ghost-item" data-ghost="ghost23">Ghost Name 23</div>
+        <div class="ghost-item" data-ghost="ghost24">Ghost Name 24</div>
+    </div>
+
+    <!-- Ghost info display area -->
+    <div id="ghost-info-container" class="ghost-info">
+        <img id="ghost-image" src="" alt="Ghost Image">
+        <h3 id="ghost-name"></h3>
+        <p id="ghost-info"></p>
+        <p id="ghost-evidence"></p>
+    </div>
+
+</body>
+</html>
